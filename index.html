@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de clima</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <section class="home">
+        <h1>Clima tempo</h1>
+
+        <form class="search">
+            <input type="search" id="search-input" placeholder="Digite o nome da cidade" />
+            <button>Buscar</button>
+        </form>
+
+        <div class="result">
+            <div class="result-title"></div>
+
+            <div class="result-info">
+                <div class="temp">
+                    <div class="temp-title">Temperatura</div>
+                    <div class="temp-info"></div>
+                    <img src="" />
+                </div>
+                <div class="wind">
+                    <div class="wind-title">Vento</div>
+                    <div class="wind-info"><span>km/h</span></div>
+                    <div class="wind-area">
+                        <div class="wind-deg" style="transform: rotate(0deg)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert"></div>
+        <footer>Criado por Renan Piovesani</footer>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

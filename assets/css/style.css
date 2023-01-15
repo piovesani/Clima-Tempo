@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home{
+    padding: 40px;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    margin: 0px 0 40px 0;
+}
+
+.search {
+    display: flex;
+    width: 300px;
+}
+.search #search-input {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0;
+}
+
+.search #search-input::placeholder {
+    color: #ccc;
+}
+
+.search button {
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.search button:hover {
+    background-color: #444;
+}
+
+.result {
+    width: 300px;
+    display: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba( 31, 38, 135, 0.37 );
+}
+
+.result-title {
+    width: 100%;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.result-info {
+    display: flex;
+    width: 100%;
+}
+.result-info .temp {
+    flex: 1;
+    text-align: center;
+}
+.result-info .wind {
+    flex: 1;
+    text-align: center;
+}
+.temp-title,
+.wind-title {
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.temp-info,
+.wind-info {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+.temp-info sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.wind-info span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.wind-area {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.wind-deg {
+    width: 15px;
+    height: 1px;
+    background-color: #FFF;
+    transform-origin: left;
+}
+
+.alert {
+    color: #FFF;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+@media (max-width: 450px) {
+    .home{
+        padding: 20px;
+    }
+  }
+
+  
